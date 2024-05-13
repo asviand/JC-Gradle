@@ -14,7 +14,6 @@ public class ProductService {
     public ProductService(Repository<Product> repository) {
         this.repository = repository;
     }
-    //todo 15.12
     public List<Product> loadAllByMaxPrice (double maxPrice) throws IOException {
         return repository
                 .loadAll()
